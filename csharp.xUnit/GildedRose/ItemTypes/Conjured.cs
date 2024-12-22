@@ -13,6 +13,7 @@ namespace GildedRoseKata.ItemTypes
 
             base.UpdateItem();
 
+            // "Conjured" items degrade in Quality twice as fast as normal items.
             var diff = currentQuality - Item.Quality;
 
             Item.Quality -= diff;

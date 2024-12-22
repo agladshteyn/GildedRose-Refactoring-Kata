@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿
 using GildedRoseKata.ItemTypes;
 
 namespace GildedRoseKata
@@ -14,14 +12,6 @@ namespace GildedRoseKata
                 case Constants.ItemNames.AgedBrie:
                     {
                         return new AgedBrie(item);
-                    }
-                case Constants.ItemNames.Plus5DexterityVest:
-                    {
-                        return new Plus5DexterityVest(item);
-                    }
-                case Constants.ItemNames.Elixir:
-                    {
-                        return new Elixir(item);
                     }
                 case Constants.ItemNames.Sulfuras:
                     {

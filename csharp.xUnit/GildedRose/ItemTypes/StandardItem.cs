@@ -18,6 +18,7 @@ namespace GildedRoseKata.ItemTypes
             DecreaseQualityIfAboveZero();
             DecreaseSellIn();
 
+            // Once the sell by date has passed, Quality degrades twice as fast.
             if (Item.SellIn < 0)
             {
                 DecreaseQualityIfAboveZero();
