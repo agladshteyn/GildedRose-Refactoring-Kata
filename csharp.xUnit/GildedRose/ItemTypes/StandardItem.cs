@@ -15,6 +15,7 @@ namespace GildedRoseKata.ItemTypes
 
         public override void UpdateItem()
         {
+            // At the end of each day our system lowers SellIn and Quality.
             DecreaseQualityIfAboveZero();
             DecreaseSellIn();
 
