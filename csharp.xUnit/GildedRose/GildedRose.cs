@@ -13,6 +13,15 @@ public class GildedRose
 
     public void UpdateQuality()
     {
+        foreach (var item in Items)
+        {
+            var itemBase = ItemTypeFactory.Create(item);
+            itemBase.UpdateItem();
+        }
+    }
+
+    public void UpdateQuality2()
+    {
         for (var i = 0; i < Items.Count; i++)
         {
             if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
